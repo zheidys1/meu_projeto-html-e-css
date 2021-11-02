@@ -36,7 +36,7 @@
         <img src="img/bolo.jpg" />
         <p>Bolos</p>
             <p> eu tenho muitas habilidades manuais, faco bolos elabaorados com desenhos
-          em pasta american, bolos simples, chocolateria  </p>
+          em pasta americana, bolos simples, chocolateria  </p>
       </div>
       <div class="caixa">
         <img src="img/costura.jpg"/>
@@ -49,6 +49,41 @@
         <span>experiencia prato peruano e venezuelano </span>
       </div>
     </section>
+<div> 
+  <div class="caixa_api">
+              <h2>Busqueda CEP</h2>
+        <div>
+        <input type="text" id="cep" maxlength="9">
+        <label for="cep">CEP</label>
+      </div>
+      
+      <div>        
+        <input type="text" id="logradouro">
+        <label for="endereço">Endereço</label>
+      </div>
+      <div>
+        <input type="text" id="bairro">
+        <label for="bairro">Bairro</label>
+      </div>
+      <div>
+        <input type="text" id="localidade">
+        <label for="cidade">Cidade</label>
+      </div>
+      <div>
+        <input type="text" id="uf">
+        <label for="estado">UF</label>
+      </div>    
+    <div>
+      <button class="btn-1" 
+      onclick="return btncep()" 
+          type="">Consultar
+        </button>
+    </div>
+    <P id="error"></P>
+
+  </div>
+</div>
+
     <section id="segunda" class="segunda-section">
       <h2>SOBRE MIM</h2>
       <p>Ola, meu nome e Heidys,sou venezuelana morando no Brasil ha 2 anos, 
@@ -78,12 +113,15 @@
     <div class="margem">
       <form class="formulario">
         <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome">
+        <input type="text" name="nome" id="nome" requireds>
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" requerid>
         <label for="comentario">Deixe seu comentário:</label>
-        <textarea name="comentario" cols="30" rows="5"></textarea>
-        <button>Enviar</button>
+        <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea>
+        <button  onclick= "return validar()" >Enviar</button>
+        <div>
+            <p id="error"></p>
+        </div>
       </form>
 
     </div>
@@ -95,6 +133,8 @@
             <p>Copyright &copy 2021  All rights reserved </p>
 
   </footer>
+  <script src="script.js"> </script>
+  <script src="script1.js"> </script>
 </body>
 </body>
-</html
+</html>
